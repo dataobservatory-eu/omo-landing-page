@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Music Observatory</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white min-h-screen flex flex-col">
+
+    <header class="bg-blue-900 border-b border-blue-700 sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <h1 class="text-2xl font-bold text-white">
+                        <a href="index.html" class="text-white hover:text-blue-300 transition-colors duration-200">Open Music Observatory</a>
+                    </h1>
+                </div>
+                <!-- Desktop view menu -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="https://finnougric.net/en/" target="_blank" rel="noopener noreferrer" title="Finno-Ugric Data Sharing Space" class="text-white hover:text-blue-300 font-medium transition-colors duration-200">Finno-Ugric Data Sharing Space</a>
+                        <a href="https://hudobnadatabaza.sk/en/" target="_blank" rel="noopener noreferrer" title="SKCMDb" class="text-white hover:text-blue-300 font-medium transition-colors duration-200">SKCMDb</a>
+                        <a href="http://135.181.91.51:3008/en/" target="_blank" rel="noopener noreferrer" title="Open Music Observatory" class="text-white hover:text-blue-300 font-medium transition-colors duration-200">Open Music Observatory</a>
+                        <a href="about.html" target="_blank" rel="noopener noreferrer" title="About this project" class="text-white hover:text-blue-300 font-medium transition-colors duration-200">About this project</a>
+                    </div>
+                </div>
+                <!-- Mobile view menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white hover:text-blue-300 focus:outline-none transition-colors duration-200">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile view menu -->
+            <div id="mobile-menu" class="mobile-menu md:hidden">
+                <div class="flex flex-col space-y-2 pb-4">
+                    <a href="https://finnougric.net/en/" target="_blank" rel="noopener noreferrer" title="Finno-Ugric Data Sharing Space" class="text-white hover:text-blue-300 font-medium py-2 transition-colors duration-200">Finno-Ugric Data Sharing Space</a>
+                    <a href="https://hudobnadatabaza.sk/en/" target="_blank" rel="noopener noreferrer" title="SKCMDb" class="text-white hover:text-blue-300 font-medium py-2 transition-colors duration-200">SKCMDb</a>
+                    <a href="http://135.181.91.51:3008/en/" target="_blank" rel="noopener noreferrer" title="Open Music Observatory" class="text-white hover:text-blue-300 font-medium py-2 transition-colors duration-200">Open Music Observatory</a>
+                    <a href="about.html" target="_blank" rel="noopener noreferrer" title="About this project" class="text-white hover:text-blue-300 font-medium py-2 transition-colors duration-200">About this project</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+        <div class="w-full max-w-4xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 equal-height-grid">
+                
+                <a href="https://finnougric.net/en/" target="_blank" rel="noopener noreferrer" 
+                   class="link-box relative border-2 border-blue-200 rounded-lg p-8 md:p-12 text-center cursor-pointer group flex flex-col overflow-hidden">
+                    <div class="absolute inset-0 z-0 pointer-events-none">
+                        <img src="assets/finnougric_bg.jpg" alt="" class="w-full h-full object-cover object-center opacity-20" />
+                    </div>
+                    <div class="flex flex-col gap-4 h-full justify-start relative z-10">
+                        <h2 class="primary-color text-2xl md:text-3xl font-bold">Finno-Ugric Data Sharing Space</h2>
+                        <div class="flex flex-col justify-end flex-1">
+                            <p class="primary-color text-base md:text-lg font-medium">An interactive browser for the Finno-Ugric Data Sharing Space</p>
+                        </div>
+                        <p class="primary-color text-sm md:text-base group-hover:underline relative z-10">Click to visit</p>
+                    </div>
+                </a>
+
+                <a href="https://hudobnadatabaza.sk/en/" target="_blank" rel="noopener noreferrer" 
+                class="link-box relative border-2 border-blue-200 rounded-lg p-8 md:p-12 text-center cursor-pointer group flex flex-col overflow-hidden">
+                    <div class="absolute inset-0 z-0 pointer-events-none">
+                        <img src="assets/skcmdb_bg.jpg" alt="" class="w-full h-full object-cover object-center opacity-20" />
+                    </div>
+                    <div class="flex flex-col gap-4 h-full justify-start relative z-10">
+                        <h2 class="primary-color text-2xl md:text-3xl font-bold">SKCMDb</h2>
+                        <div class="flex flex-col justify-end flex-1">
+                            <p class="primary-color text-base md:text-lg font-medium">A semantic browser for the Slovak Comprehensive Music Database</p>
+                        </div>
+                        <p class="primary-color text-sm md:text-base group-hover:underline relative z-10">Click to visit</p>
+                    </div>
+                </a>
+
+                <a href="http://135.181.91.51:3008/en/" target="_blank" rel="noopener noreferrer" 
+                   class="link-box relative border-2 border-blue-200 rounded-lg p-8 md:p-12 text-center cursor-pointer group flex flex-col overflow-hidden">
+                    <div class="flex flex-col gap-4 h-full justify-start relative z-10">
+                        <h2 class="primary-color text-2xl md:text-3xl font-bold">Open Music Observatory</h2>
+                        <div class="flex flex-col justify-end flex-1">
+                            <p class="primary-color text-base md:text-lg font-medium"></p>
+                        </div>
+                        <p class="primary-color text-sm md:text-base group-hover:underline relative z-10">Click to visit</p>
+                    </div>
+                </a>
+
+                <a href="about.html" class="link-box relative border-2 border-blue-200 rounded-lg p-8 md:p-12 text-center cursor-pointer group flex flex-col overflow-hidden">
+                    <div class="flex flex-col gap-4 h-full justify-start relative z-10">
+                        <h2 class="primary-color text-2xl md:text-3xl font-bold">About this project</h2>
+                        <div class="flex flex-col justify-end flex-1">
+                            <p class="primary-color text-base md:text-lg font-medium">Read more about the Open Music Observatory</p>
+                        </div>
+                        <p class="primary-color text-sm md:text-base group-hover:underline relative z-10">Click to visit</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-blue-50 border-t border-blue-100 mt-auto">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="primary-color text-sm">&copy; 2025 Open Music Observatory. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="primary-color hover:text-blue-300 text-sm transition-colors duration-200">Privacy Policy</a>
+                    <a href="#" class="primary-color hover:text-blue-300 text-sm transition-colors duration-200">Terms & Conditions</a>
+                    <a href="#" class="primary-color hover:text-blue-300 text-sm transition-colors duration-200">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

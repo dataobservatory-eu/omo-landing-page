@@ -1,0 +1,36 @@
+.link-box {
+    transition: all 0.3s ease;
+}
+
+.link-box:hover {
+    transform: scale(1.05);
+    border-color: #0066cc;
+}
+
+.link-box:hover .primary-color {
+    color: #0066cc;
+}
+
+.mobile-menu {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.mobile-menu.open {
+    max-height: 200px;
+    opacity: 1;
+}
+
+.primary-color {
+    color: #003399;
+}
+
+.equal-height-grid {
+    grid-auto-rows: 1fr;
+}
+
+.equal-height-grid > .link-box {
+    height: 100%;
+}
