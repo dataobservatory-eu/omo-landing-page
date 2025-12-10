@@ -1,3 +1,7 @@
+# Local server configuration (ignored by GitHub Pages)
+.htaccess
+web.config
+
 # History files
 .Rhistory
 .Rapp.history
