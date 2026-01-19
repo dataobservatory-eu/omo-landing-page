@@ -19,7 +19,7 @@
 }
 
 .mobile-menu.open {
-    max-height: 200px;
+    max-height: 250px;
     opacity: 1;
 }
 
@@ -33,4 +33,13 @@
 
 .equal-height-grid > .link-box {
     height: 100%;
+}
+
+/* Center the last item when it's alone in a row (odd number of items) */
+@media (min-width: 768px) {
+    .equal-height-grid > .link-box.last-item-centered {
+        grid-column: span 2;
+        max-width: calc(50% - 1rem);
+        justify-self: center;
+    }
 }
