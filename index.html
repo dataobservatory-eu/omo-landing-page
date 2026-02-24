@@ -21,9 +21,11 @@
                 <!-- Desktop view menu -->
                 <div class="hidden lg:block">
                     <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="https://reprexbase.eu/hundb/index.php?title=Main_Page" target="_blank" rel="noopener noreferrer" title="HUNDb" class="text-white text-center hover:text-blue-300 font-medium transition-colors duration-200">Blog</a>
+                        <!-- TODO not sure which URL is the correct one -->
+                        <!-- <a href="https://reprexbase.eu/hundb/index.php?title=Main_Page" target="_blank" rel="noopener noreferrer" title="Blog" class="text-white text-center hover:text-blue-300 font-medium transition-colors duration-200">Blog</a> -->
+                        <a href="https://openmusic.substack.com/" target="_blank" rel="noopener noreferrer" title="Blog" class="text-white text-center hover:text-blue-300 font-medium transition-colors duration-200">Blog</a>
                         <a href="https://hudobnadatabaza.sk/en/" target="_blank" rel="noopener noreferrer" title="SKCMDb" class="text-white text-center hover:text-blue-300 font-medium transition-colors duration-200">SK</a>
-                        <a href="https://reprexbase.eu/hundb/index.php?title=Main_Page" target="_blank" rel="noopener noreferrer" title="HUNDb" class="text-white text-center hover:text-blue-300 font-medium transition-colors duration-200">HU</a>
+                        <a href="http://135.181.91.51:3011/en/" target="_blank" rel="noopener noreferrer" title="HUNDb" class="text-white text-center hover:text-blue-300 font-medium transition-colors duration-200">HU</a>
                         <a href="http://135.181.91.51:3008/en/" target="_blank" rel="noopener noreferrer" title="Open Music Observatory" class="text-white text-center hover:text-blue-300 font-medium transition-colors duration-200">Open Music Observatory</a>
                         <a href="https://finnougric.net/en/" target="_blank" rel="noopener noreferrer" title="Finno-Ugric Data Sharing Space" class="text-white text-center hover:text-blue-300 font-medium transition-colors duration-200">Finno-Ugric Data Sharing Space</a>
                         <a href="about.html" title="About this project" class="text-white text-center hover:text-blue-300 font-medium transition-colors duration-200">About this project</a>
@@ -41,11 +43,13 @@
             <!-- Mobile view menu -->
             <div id="mobile-menu" class="mobile-menu lg:hidden">
                 <div class="flex flex-col space-y-2 pb-4">
-                    <a href="https://openmusic.substack.com/" target="_blank" rel="noopener noreferrer" title="Finno-Ugric Data Sharing Space" class="text-white hover:text-blue-300 font-medium py-2 transition-colors duration-200">Blog</a>
+                    <!-- TODO not sure which URL is the correct one -->
+                    <!-- <a href="https://reprexbase.eu/hundb/index.php?title=Main_Page" target="_blank" rel="noopener noreferrer" title="Blog" class="text-white hover:text-blue-300 font-medium py-2 transition-colors duration-200">Blog</a> -->
+                    <a href="https://openmusic.substack.com/" target="_blank" rel="noopener noreferrer" title=Blog" class="text-white hover:text-blue-300 font-medium py-2 transition-colors duration-200">Blog</a>
                     <a href="https://hudobnadatabaza.sk/en/" target="_blank" rel="noopener noreferrer" title="SKCMDb" class="text-white hover:text-blue-300 font-medium py-2 transition-colors duration-200">SK</a>
-                    <a href="https://reprexbase.eu/hundb/index.php?title=Main_Page" target="_blank" rel="noopener noreferrer" title="Magyar Modul" class="text-white hover:text-blue-300 font-medium py-2 transition-colors duration-200">HU</a>
-                    <a href="https://finnougric.net/en/" target="_blank" rel="noopener noreferrer" title="Finno-Ugric Data Sharing Space" class="text-white hover:text-blue-300 font-medium py-2 transition-colors duration-200">Finno-Ugric Data Sharing Space</a>
+                    <a href="http://135.181.91.51:3011/en/" target="_blank" rel="noopener noreferrer" title="Magyar Modul" class="text-white hover:text-blue-300 font-medium py-2 transition-colors duration-200">HU</a>
                     <a href="http://135.181.91.51:3008/en/" target="_blank" rel="noopener noreferrer" title="Open Music Observatory" class="text-white hover:text-blue-300 font-medium py-2 transition-colors duration-200">Open Music Observatory</a>
+                    <a href="https://finnougric.net/en/" target="_blank" rel="noopener noreferrer" title="Finno-Ugric Data Sharing Space" class="text-white hover:text-blue-300 font-medium py-2 transition-colors duration-200">Finno-Ugric Data Sharing Space</a>
                     <a href="about.html" title="About this project" class="text-white hover:text-blue-300 font-medium py-2 transition-colors duration-200">About this project</a>
                 </div>
             </div>
@@ -86,6 +90,9 @@
 
                 <a href="http://135.181.91.51:3008/en/" target="_blank" rel="noopener noreferrer" 
                    class="link-box relative border-2 border-blue-200 rounded-lg p-8 md:p-12 text-center cursor-pointer group flex flex-col overflow-hidden">
+                    <div class="absolute inset-0 z-0 pointer-events-none">
+                        <img src="assets/omo_bg.png" alt="" class="w-full h-full object-contain object-center opacity-20" />
+                    </div>
                     <div class="flex flex-col gap-4 h-full justify-start relative z-10">
                         <h2 class="primary-color text-2xl md:text-3xl font-bold">Open Music Observatory</h2>
                         <div class="flex flex-col justify-center flex-1">
@@ -95,7 +102,7 @@
                     </div>
                 </a>
 
-                <a href="https://reprexbase.eu/hundb/index.php?title=Main_Page" target="_blank" rel="noopener noreferrer" 
+                <a href="http://135.181.91.51:3011/en/" target="_blank" rel="noopener noreferrer" 
                    class="link-box relative border-2 border-blue-200 rounded-lg p-8 md:p-12 text-center cursor-pointer group flex flex-col overflow-hidden">
                     <div class="absolute inset-0 z-0 pointer-events-none">
                         <img src="assets/mzh_bg.jpg" alt="" class="w-full h-full object-cover object-center opacity-20" />
@@ -138,6 +145,14 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="http://34.102.139.84/widget/widget.iife.js"></script>
+    <script>
+        WhiteLabelChatbot.init({
+        apiKey: 'INSERT_API_KEY_HERE',
+        backendUrl: 'http://34.102.139.84/api',
+        containerId: 'chatbot-root'
+        });
+    </script>
 </body>
 </html>
 
