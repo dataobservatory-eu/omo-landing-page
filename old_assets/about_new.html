@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Background - Open Music Europe</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-white min-h-screen flex flex-col">
+
+<header class="bg-blue-900 border-b border-blue-700 sticky top-0 z-50 shadow-sm">
+    <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <div class="flex-shrink-0">
+                <h1 class="text-2xl font-bold text-white">
+                    <a href="index.html" class="text-white hover:text-blue-300 transition-colors duration-200">
+                        Open Music Observatory
+                    </a>
+                </h1>
+            </div>
+
+            <!-- Desktop view menu -->
+            <div class="hidden lg:block">
+                <div class="ml-10 flex items-baseline space-x-8">
+                    <a href="https://reprexbase.eu/hundb/index.php?title=Main_Page" target="_blank" rel="noopener noreferrer" title="HUNDb" class="text-white text-center hover:text-blue-300 font-medium transition-colors duration-200">Blog</a>
+                    <a href="https://hudobnadatabaza.sk/en/" target="_blank" rel="noopener noreferrer" title="SKCMDb" class="text-white text-center hover:text-blue-300 font-medium transition-colors duration-200">SK</a>
+                    <a href="https://reprexbase.eu/hundb/index.php?title=Main_Page" target="_blank" rel="noopener noreferrer" title="HUNDb" class="text-white text-center hover:text-blue-300 font-medium transition-colors duration-200">HU</a>
+                    <a href="http://135.181.91.51:3008/en/" target="_blank" rel="noopener noreferrer" title="Open Music Observatory" class="text-white text-center hover:text-blue-300 font-medium transition-colors duration-200">Open Music Observatory</a>
+                    <a href="https://finnougric.net/en/" target="_blank" rel="noopener noreferrer" title="Finno-Ugric Data Sharing Space" class="text-white text-center hover:text-blue-300 font-medium transition-colors duration-200">Finno-Ugric Data Sharing Space</a>
+                    <a href="about.html" title="About this project" class="text-white text-center hover:text-blue-300 font-medium transition-colors duration-200">About this project</a>
+                </div>
+            </div>
+            <!-- Mobile view menu button -->
+            <div class="lg:hidden">
+                <button id="mobile-menu-button" class="text-white hover:text-blue-300 focus:outline-none transition-colors duration-200">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile view menu -->
+        <div id="mobile-menu" class="mobile-menu lg:hidden">
+            <div class="flex flex-col space-y-2 pb-4">
+                <a href="https://finnougric.net/en/" target="_blank" rel="noopener noreferrer" title="Finno-Ugric Data Sharing Space" class="text-white hover:text-blue-300 font-medium py-2 transition-colors duration-200">Finno-Ugric Data Sharing Space</a>
+                <a href="https://hudobnadatabaza.sk/en/" target="_blank" rel="noopener noreferrer" title="SKCMDb" class="text-white hover:text-blue-300 font-medium py-2 transition-colors duration-200">SKCMDb</a>
+                <a href="http://135.181.91.51:3008/en/" target="_blank" rel="noopener noreferrer" title="Open Music Observatory" class="text-white hover:text-blue-300 font-medium py-2 transition-colors duration-200">Open Music Observatory</a>
+                <a href="https://reprexbase.eu/hundb/index.php?title=Main_Page" target="_blank" rel="noopener noreferrer" title="Magyar Modul" class="text-white hover:text-blue-300 font-medium py-2 transition-colors duration-200">Magyar Modul</a>
+                <a href="about.html" title="About this project" class="text-white hover:text-blue-300 font-medium py-2 transition-colors duration-200">About this project</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+
+<main class="flex-grow py-12 px-4 sm:px-6 lg:px-8">
+    <div class="container mx-auto max-w-4xl">
+
+        <h2 class="text-4xl md:text-5xl font-bold text-blue-900 text-center mb-8">Project Background</h2>
+
+        <div class="space-y-6 text-blue-900 text-base md:text-lg leading-relaxed">
+
+            <p>
+                The <em>Open Music Observatory</em> (OMO) is an operational, federated European 
+                observatory infrastructure. It connects national institutions, 
+                rights organisations, research partners, and cultural heritage
+                bodies through working data-sharing modules, including a fully
+                functioning Slovak national node supported by signed agreements.
+                The system runs in production and supports real governance,
+                research, and industry use cases.
+            </p>
+            
+            <p>
+                It is not a passive observation point, but an active data 
+                infrastructure that continuously records, organises, and 
+                activates music data. It enables national satellite accounts, 
+                valuation and benchmarking models, market share measurement, 
+                metadata repair, and the reactivation of 
+                out-of-circulation repertoire.
+            </p>
+            <p>
+                Following the European Interoperability Framework, the Observatory
+                is integrated with the
+                 <a  href="https://data.europa.eu/data/catalogues/open-music-observatory" 
+                class="underline underline-offset-2">EU Open Data Portal</a></em>, 
+                <a  href="https://metis-preview-portal.eanadev.org/en/search?page=1&qf=PROVIDER%3A%22Europeana%20Sounds%22&qf=DATA_PROVIDER%3A%22Digital%20Archives%20of%20Latvian%20Folklore%22&query=&view=grid" 
+                class="underline underline-offset-2">Europeana</a></em>, 
+                <a  href="https://zenodo.org/communities/music_observatory/" 
+                class="underline underline-offset-2">OpenAIRE</a></em> and other 
+                scientific networks, and other networked infrastructures. 
+                It operates under a European model of data sovereignty, 
+                respecting GDPR, copyright law, and responsible AI principles.
+            <p>
+            <p>
+                <iframe src="https://openmusic.substack.com/embed" width="900" height="300" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+            </p>
+            <p>    
+                Designed as a permanent, open platform for a future European 
+                Music Observatory, it enables enhanced cooperation across public 
+                authorities, rights organisations, cultural institutions, 
+                researchers, and industry — connecting distributed music data 
+                without forcing centralisation or redistributing rights.
+            </p>
+            <p>
+                The Open Music Observatory builds on earlier European initiatives in 
+                music data integration and policy analysis, from the CEEMID project 
+                to later validation and prototyping in innovation programmes such as
+                the <em>Yes!Delft AI & Blockchain Incubator</em> and the 
+                <em>JUMP Music Market Accelerator</em>. As background intellectual property of 
+                Reprex, it was further developed within <em>
+                <a  href="https://www.openmuse.eu/" 
+                class="underline underline-offset-2">Open Music Europe (OpenMusE)</a></em>, 
+                a Horizon Europe Research and Innovation Action 
+                (Grant Agreement No. 101095295), focused on governance, technical 
+                readiness, and policy-relevant data.
+            </p>
+        </div>
+
+        <!-- Policy Links Section -->
+        <div class="mt-10 space-y-4">
+
+            <div class="flex flex-wrap items-center gap-4">
+                <a href="https://downloads.reprex.nl/2025/greenpaper/" target="_blank"
+                   class="px-6 py-3 bg-blue-900 text-white font-semibold rounded-md hover:bg-blue-700 transition-colors duration-200">
+                    Read the Green Paper
+                </a>
+                <span class="text-blue-900 text-base">(EPUB, PDF, HTML or Word for feedback)</span>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-4">
+                <span class="text-blue-900 text-base">Related: Report of the CITF First Project</span>
+                <a href="https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/3fb3f9ed-e93a-48fb-92e8-93c61a999e48/content"
+                   target="_blank"
+                   class="px-6 py-3 bg-white border border-blue-900 text-blue-900 font-semibold rounded-md hover:bg-blue-100 transition-colors duration-200">
+                    Interoperable, trustworthy, and machine-readable copyright data in the AI era
+                </a>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-4">
+                <span class="text-blue-900 text-base">Related: European Parliament Resolution on music streaming</span>
+                <a href="http://data.europa.eu/eli/C/2024/5711/oj"
+                   target="_blank"
+                   class="px-6 py-3 bg-white border border-blue-900 text-blue-900 font-semibold rounded-md hover:bg-blue-100 transition-colors duration-200">
+                    P9_TA(2024)0020 — Cultural diversity & conditions for authors in the European music streaming market
+                </a>
+            </div>
+
+            <p class="text-blue-900 text-sm leading-relaxed">
+                P9_TA(2024)0020 – <em>Cultural diversity and the conditions for authors in the European music
+                streaming market</em>, European Parliament resolution of 17 January 2024 (2023/2054(INI)),
+                OJ C, C/2024/5711, 17.10.2024.  
+                ELI: <a class="underline text-blue-700 hover:text-blue-500" target="_blank"
+                       href="http://data.europa.eu/eli/C/2024/5711/oj">http://data.europa.eu/eli/C/2024/5711/oj</a>
+            </p>
+
+        </div>
+
+        <!-- Federated Data Sharing Spaces Section -->
+        <section class="bg-white border-t border-blue-100 py-16 mt-12">
+            <div class="container mx-auto max-w-4xl">
+
+                <h2 class="text-3xl font-bold text-blue-900 mb-6">The Federated Data Sharing Spaces</h2>
+
+                <p class="text-blue-900 text-lg leading-relaxed mb-6">
+                    The Open Music Observatory is built from four interoperable, federated data-sharing spaces.
+                    These demonstrate how music data can be governed responsibly at supranational, national,
+                    regional, and sub-national levels.
+                </p>
+
+                <p class="text-blue-900 text-lg leading-relaxed mb-10">
+                    Full long-form documentation is available at  
+                    <a href="https://downloads.reprex.nl/2025/open-music-observatory/"
+                       target="_blank" class="text-blue-700 underline hover:text-blue-500">
+                       https://downloads.reprex.nl/2025/open-music-observatory/
+                    </a>.
+                </p>
+
+                <div class="space-y-10">
+
+                    <!-- Finno-Ugric -->
+                    <div>
+                        <h3 class="text-2xl font-semibold text-blue-900 mb-2">Finno-Ugric Data Sharing Space</h3>
+                        <p class="text-blue-900 text-lg leading-relaxed">
+                            A module demonstrating how minoritised and endangered ethnolinguistic communities
+                            (e.g., Livonian, Karelian, Sámi, Mari) can regain stewardship over their heritage
+                            materials. It serves as a <strong>subsidiarity</strong> example: empowering regional
+                            identity groups to curate and present their own music data.
+                        </p>
+                    </div>
+
+                    <!-- Slovak -->
+                    <div>
+                        <h3 class="text-2xl font-semibold text-blue-900 mb-2">Slovak Comprehensive Music Database</h3>
+                        <p class="text-blue-900 text-lg leading-relaxed">
+                            A national module developed with the National Library of Slovakia, SOZA, the
+                            Slovak Music Information Centre (IAMIC/IAML), and the Music Fund. It demonstrates
+                            how national institutions can coordinate a shared, well-governed infrastructure,
+                            supporting many policy goals described in the CITF report and the European Parliament
+                            resolution.
+                        </p>
+                    </div>
+
+                    <!-- Hungarian -->
+                    <div>
+                        <h3 class="text-2xl font-semibold text-blue-900 mb-2">Hungarian Music Database</h3>
+                        <p class="text-blue-900 text-lg leading-relaxed">
+                            A developing module that demonstrates how countries without pre-existing shared
+                            music-data ecosystems can adopt the Observatory’s federated model. It focuses on
+                            folkloric collections, heritage archives, and post-socialist materials with metadata
+                            repair needs.
+                        </p>
+                    </div>
+
+                    <!-- Core -->
+                    <div>
+                        <h3 class="text-2xl font-semibold text-blue-900 mb-2">Open Music Observatory Core Module</h3>
+                        <p class="text-blue-900 text-lg leading-relaxed">
+                            The supranational module that aggregates European-level datasets, studies, indicators,
+                            and data from countries not yet operating a full national node. It provides a
+                            cross-European view of musical diversity, circulation, creation, and economic and
+                            cultural value.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Downloads buttons (optional or keep) -->
+        <div class="flex flex-col items-start space-y-4 mt-10">
+            <a href="https://zenodo.org/records/17669739" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200 w-full md:w-auto">
+                Download Project Presentation
+            </a>
+            <a href="https://downloads.reprex.nl/2025/open-music-observatory/" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200 w-full md:w-auto">
+                Technical Information & More
+            </a>
+        </div>
+
+    </div>
+</main>
+
+
+
+<footer class="bg-blue-50 border-t border-blue-100 mt-auto">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <p class="primary-color text-sm">&copy; 2025 Open Music Observatory. All rights reserved.</p>
+            </div>
+            <div class="flex space-x-6">
+                <a href="#" class="primary-color hover:text-blue-300 text-sm">Privacy Policy</a>
+                <a href="#" class="primary-color hover:text-blue-300 text-sm">Terms & Conditions</a>
+                <a href="#" class="primary-color hover:text-blue-300 text-sm">Contact</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
